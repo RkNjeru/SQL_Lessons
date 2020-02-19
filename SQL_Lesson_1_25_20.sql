@@ -12,7 +12,11 @@ select [columns] from [table] ORDER BY [columns];
 
 -- multiple columns to order by
 select [columns] from [table] order by <colummn1>, <column2>, ....;
-select [columns] from [table] where [condition] ORDER BY <column1>, <column2>, ....;
+
+select [columns] 
+    from [table] 
+    where [condition] 
+    ORDER BY <column1>, <column2>, ....;
 
 -- COMMIT
 -- makes temporary changes permanent
@@ -28,6 +32,17 @@ CREATE TABLE [table_name] (
     <column2> <datatype>,
     ... );
 
+CREATE TABLE prof 
+    (id INT,
+    name VARCHAR(50),
+    college VARCHAR(40),
+    login VARCHAR(25)
+    );
+
+INSERT INTO PROF VALUES 
+(1, 'Fake Name', 'UGA', 'caubert'),
+(2, 'Mike Dowell', 'Augusta', 'mdowell'),
+(2, 'Robert Smith', 'Tech', 'rsmith');
  CREATE TABLE ping_pong
     (id INT,
     player VARCHAR(50),
