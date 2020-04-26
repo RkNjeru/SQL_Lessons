@@ -47,10 +47,10 @@ select country, count(*) from w3Customers group by country;
 
 select country AS 'Country', count(*) AS 'Number of Customers' from w3Customers group by country order by count(*) desc;
 
--- find the max balance value for each city
-select city, max(balance) from w3Customers group by city;
+-- find the sum balance value for each county
+select county, sum(balance) from w3Customers group by county;
 
-select city, max(balance) from w3Customers group by city order by max(balance) desc;
+select city, sum(balance) from w3Customers group by city order by max(balance) desc;
 
 -- find the average balance for each country 
 select country, avg(balance) from w3Customers group by country order by avg(balance) desc;
