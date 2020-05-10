@@ -62,6 +62,7 @@ INSERT INTO ping_pong (id, player, wins, losses)
 INSERT INTO ping_pong (player, id)
     VALUES ('John', 5);    
 
+-- ERROR BAD QUERY 
 INSERT INTO ping_pong
     VALUES ('Kevin', 7);       
 
